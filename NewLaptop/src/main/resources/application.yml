@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: Laptop_Purchase
+  datasource:
+    url: jdbc:mysql://localhost:3306/Laptop_Purchase
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
